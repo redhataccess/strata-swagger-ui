@@ -1,0 +1,14 @@
+{
+  "name": "strata-swagger-ui",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Clayton <mclayton@redhat.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "GPLv2",
+  "dependencies": {
+    "iframe-resizer": "~2.8.7"
+  }
+}

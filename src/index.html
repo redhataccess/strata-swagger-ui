@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="pafoff no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="pafoff no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="pafoff no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="pafoff no-js legacyfalse"> <!--<![endif]-->
+  <head>
+    <!-- SPA_HEAD -->
+
+  </head>
+  <body>
+  <!-- SPA_HEADER -->
+
+  <style type="text/css">
+      iframe {
+          height: 600px;
+          width: 100%;
+      }
+  </style>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h1>Red Hat Customer Portal API Reference</h1>
+              <iframe src="swagger/?url=/rs/api-docs/swagger.json" frameborder="0"></iframe>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      require.config({
+          baseUrl: './',
+          paths: {
+              'iframe-resizer': 'bower_components/iframe-resizer/js/iframeResizer.min'
+          }
+      });
+      chrometwo_require(['jquery', 'iframe-resizer'], function($) {
+          $('iframe').iFrameResize({log: false});
+      });
+  </script>
+
+  <!-- SPA_FOOTER -->
+</body>
+</html>
